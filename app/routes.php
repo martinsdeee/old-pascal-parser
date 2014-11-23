@@ -15,3 +15,13 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('parser', [
+    'as' => 'parser.get',
+    'uses' => 'ParserController@index'
+]);
+
+Route::post('parser', [
+    'as' => 'parser.store',
+    'uses' => 'ParserController@store'
+]);
