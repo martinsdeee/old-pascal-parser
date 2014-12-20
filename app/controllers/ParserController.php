@@ -23,7 +23,7 @@ class ParserController extends \BaseController {
             'reg_pattern' => [
                 '/:=/', '/\./', '/\(/', '/\)/', '/:/', '/;/',
                 '/,/', '/\[/', '/\]/', '/\=/', '/\+/',
-                '/\-/', '/>/', '/</', '\''
+                '/\-/', '/>/', '/</', '/\'/'
             ],
             'reg_replacement' => [
                 ' := ', ' . ', ' ( ', ' ) ', ' : ', ' ; ',
@@ -69,4 +69,6 @@ class ParserController extends \BaseController {
         return $result;
     }
 
+    // Paterns
+    // //
 }
